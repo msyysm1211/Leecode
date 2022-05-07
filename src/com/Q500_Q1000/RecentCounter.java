@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
 
-class RecentCounter {
+class RecentCounter { //question
     public static Queue<Integer> queue;
 
     public RecentCounter() {
