@@ -1,4 +1,4 @@
-package com.Q500_Q1000;
+package com.Problem;
 
 public class Main {
 

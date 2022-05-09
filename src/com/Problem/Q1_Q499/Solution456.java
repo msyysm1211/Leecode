@@ -1,6 +1,5 @@
-package com.Q500_Q1000.Q1_Q499;
+package com.Problem.Q1_Q499;
 
-import java.util.Map;
 import java.util.TreeMap;
 
 class Solution456 {
