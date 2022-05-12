@@ -54,7 +54,7 @@ class Solution433 {
     public static void main(String args[]) {
         Solution433 a = new Solution433();
         int t = a.minMutation("AACCGGTT",
-                "AAACGGTA", new String[]{"AACCGGTA","AACCGCTA","AAACGGTA"});
+                "AAACGGTA", new String[]{"AACCGGTA", "AACCGCTA", "AAACGGTA"});
         System.out.println(t);
     }
 }
