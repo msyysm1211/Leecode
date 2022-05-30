@@ -1,8 +1,6 @@
 package com.Problem.Q1_Q499;
 
-import com.Problem.Q500_Q999.Solution942;
-
-public class Solution11 {
+public class Solution0011 {
     public int maxArea(int[] height) {
         int res = 0;
         int n = height.length;
@@ -23,7 +21,7 @@ public class Solution11 {
     }
 
     public static void main(String args[]) {
-        Solution11 a = new Solution11();
+        Solution0011 a = new Solution0011();
         int t = a.maxArea(new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7});
         System.out.println(t);
     }

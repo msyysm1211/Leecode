@@ -1,9 +1,8 @@
 package com.Problem.Q1_Q499;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class Solution16 {
+public class Solution0016 {
     public int threeSumClosest(int[] nums, int target) {
         Arrays.sort(nums);
         int res = Integer.MAX_VALUE / 2;
@@ -28,7 +27,7 @@ public class Solution16 {
     }
 
     public static void main(String args[]) {
-        Solution16 a = new Solution16();
+        Solution0016 a = new Solution0016();
         int t = a.threeSumClosest(new int[]{-1, 2, 1, -4}, 1);
         System.out.println(t);
     }

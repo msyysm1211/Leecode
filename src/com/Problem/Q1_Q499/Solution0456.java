@@ -2,7 +2,7 @@ package com.Problem.Q1_Q499;
 
 import java.util.TreeMap;
 
-class Solution456 {
+class Solution0456 {
     public boolean find132pattern(int[] nums) {//brute force
         int l = nums.length;
         for (int i = 0; i < l; i++) {
@@ -42,7 +42,7 @@ class Solution456 {
     }
 
     public static void main(String args[]) {
-        Solution456 a = new Solution456();
+        Solution0456 a = new Solution0456();
         boolean t = a.find132pattern2(new int[]{3, 1, 4, 2});
     }
 }

@@ -1,8 +1,6 @@
 package com.Problem.Q500_Q999;
 
-import com.Problem.Q500_Q999.Solution942;
-
-public class Solution942 {
+public class Solution0942 {
     public int[] diStringMatch(String s) {
         int n = s.length();
         int low = 0, high = n;
@@ -15,7 +13,7 @@ public class Solution942 {
     }
 
     public static void main(String args[]) {
-        Solution942 a = new Solution942();
+        Solution0942 a = new Solution0942();
         int[] t = a.diStringMatch("IDID");
         int w;
     }

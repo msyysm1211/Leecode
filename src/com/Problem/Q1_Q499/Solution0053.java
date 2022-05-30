@@ -1,6 +1,6 @@
 package com.Problem.Q1_Q499;
 
-public class Solution53 {
+public class Solution0053 {
     public int maxSubArray(int[] nums) {
         int res = nums[0];
         int opt[] = new int[nums.length];

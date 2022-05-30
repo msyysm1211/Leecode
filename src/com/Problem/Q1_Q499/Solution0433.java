@@ -2,7 +2,7 @@ package com.Problem.Q1_Q499;
 
 import java.util.*;
 
-class Solution433 {
+class Solution0433 {
     public int minMutation(String start, String end, String[] bank) {
         int res = 0;
         if (start.equals(end)) {
@@ -52,7 +52,7 @@ class Solution433 {
     }
 
     public static void main(String args[]) {
-        Solution433 a = new Solution433();
+        Solution0433 a = new Solution0433();
         int t = a.minMutation("AACCGGTT",
                 "AAACGGTA", new String[]{"AACCGGTA", "AACCGCTA", "AAACGGTA"});
         System.out.println(t);

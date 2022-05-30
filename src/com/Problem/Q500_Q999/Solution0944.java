@@ -1,6 +1,6 @@
 package com.Problem.Q500_Q999;
 
-public class Solution944 {
+public class Solution0944 {
     public int minDeletionSize(String[] strs) {
         int res = 0;
         int n = strs.length;
@@ -17,7 +17,7 @@ public class Solution944 {
     }
 
     public static void main(String args[]) {
-        Solution944 a = new Solution944();
+        Solution0944 a = new Solution0944();
         int t = a.minDeletionSize(new String[]{"zyx", "wvu", "tsr"});
         System.out.println(t);
     }
