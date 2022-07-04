@@ -1,6 +1,6 @@
 package com.Problem.Q1_Q499;
 
-public class Solution098 {
+public class Solution0098 {
     public boolean isValidBST(TreeNode root) {
         return check(root, Long.MIN_VALUE, Long.MAX_VALUE);
     }
