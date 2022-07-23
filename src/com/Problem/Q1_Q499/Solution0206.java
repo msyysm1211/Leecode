@@ -1,14 +1,22 @@
 package com.Problem.Q1_Q499;
 
 public class Solution0206 {
+    //    public ListNode reverseList(ListNode head) {
+//        if (head == null || head.next == null) {
+//            return head;
+//        }
+//        ListNode newpoint = reverseList(head.next);
+//        head.next.next = head;
+//        head.next = null;
+//        return newpoint;
+//    }
     public ListNode reverseList(ListNode head) {
-        if (head == null || head.next == null) {
+        if (head == null || head.next == null)
             return head;
-        }
-        ListNode newpoint = reverseList(head.next);
+        ListNode node = reverseList(head.next);
         head.next.next = head;
         head.next = null;
-        return newpoint;
+        return node;
     }
 
     public static void main(String args[]) {
