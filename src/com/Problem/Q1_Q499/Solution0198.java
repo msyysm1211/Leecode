@@ -9,7 +9,7 @@ public class Solution0198 {
             opt[i] = nums[i];
         }
         for (int i = 0; i < n; i++) {
-            for (int j = 1; j <= i; j++) {
+            for (int j = 2; j <= i; j++) {
                 opt[i] = Math.max(opt[i], opt[i - j] + nums[i]);
             }
         }

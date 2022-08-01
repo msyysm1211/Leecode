@@ -2,25 +2,25 @@ package com.Problem.Q500_Q999;
 
 public class Solution0695 {
     public int maxAreaOfIsland(int[][] grid) {
-        int ans = 0;
+        int res = 0;
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[0].length; j++) {
-                ans = Math.max(ans, DFS(grid, i, j));
+                res = Math.max(res, dfs(grid, i, j));
             }
         }
-        return ans;
+        return res;
     }
 
-    int DFS(int[][] image, int i, int j) {
-        if (i < 0 || j < 0 || i > image.length - 1 || j > image[0].length - 1 || image[i][j] != 1) {
+    int dfs(int[][] grid, int x, int y) {
+        if (x < 0 || y < 0 || x >= grid.length || y >= grid[0].length || grid[x][y] == 0) {
             return 0;
         }
-        image[i][j] = 0;
-        int ans = 1;
-        ans += DFS(image, i - 1, j);
-        ans += DFS(image, i + 1, j);
-        ans += DFS(image, i, j - 1);
-        ans += DFS(image, i, j + 1);
-        return ans;
+        grid[x][y] = 0;
+        int cnt = 1;
+        cnt += dfs(grid, x + 1, y);
+        cnt += dfs(grid, x - 1, y);
+        cnt += dfs(grid, x, y + 1);
+        cnt += dfs(grid, x, y - 1);
+        return cnt;
     }
 }
