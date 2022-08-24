@@ -1,9 +1,10 @@
-package com.Problem.Q1_Q499;
+package com.Problem.Q500_Q999;
+
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class StringToTreeNode {
+public class StringtoTreeNode {
     public TreeNode stringToTreeNode(String input) {
         input = input.trim();
         input = input.substring(1, input.length() - 1);
