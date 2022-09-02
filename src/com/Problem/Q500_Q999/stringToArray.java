@@ -1,4 +1,4 @@
-package com.Problem.Q1_Q499;
+package com.Problem.Q500_Q999;
 
 import java.util.ArrayList;
 import java.util.List;
