@@ -2,31 +2,29 @@ package com.Problem.Q1_Q499;
 
 public class Solution0215_test {
     public int findKthLargest(int[] nums, int k) {
-        int size = nums.length;
-        build(nums, size);
-        for (int i = nums.length - 1; i >= nums.length + 1 - k; i--) {
+        int n = nums.length - 1;
+        buildheap(nums, n);
+        for (int i = nums.length - 1; i >= nums.length - k + 1; i--) {
             swap(nums, 0, i);
-            size--;
-            heapify(nums, size, 0);
+            heapify(nums, 0, n);
+            n--;
         }
         return nums[0];
     }
 
-
-    void swap(int nums[], int a, int b) {
+    void swap(int[] nums, int a, int b) {
         int temp = nums[a];
         nums[a] = nums[b];
         nums[b] = temp;
     }
 
-
-    void build(int[] nums, int size) {
-        for (int i = (size - 2) / 2; i >= 0; i--) {
-            heapify(nums, size, i);
+    void buildheap(int[] nums, int size) {
+        for (int i = size / 2 - 1; i >= 0; i--) {
+            heapify(nums, i, size);
         }
     }
 
-    void heapify(int[] nums, int size, int parent) {
+    void heapify(int[] nums, int parent, int size) {
         int left = parent * 2 + 1;
         int right = parent * 2 + 2;
         int bigger = parent;
@@ -38,7 +36,7 @@ public class Solution0215_test {
         }
         if (bigger != parent) {
             swap(nums, bigger, parent);
-            heapify(nums, size, bigger);
+            heapify(nums, parent, size);
         }
     }
 
