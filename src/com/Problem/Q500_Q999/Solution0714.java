@@ -1,4 +1,4 @@
-package com.Problem.Q1_Q499;
+package com.Problem.Q500_Q999;
 
 public class Solution0714 {
     public int maxProfit(int[] prices, int fee) {
